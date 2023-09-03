@@ -1,0 +1,27 @@
+:host {
+  display: contents;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-lg);
+  text-align: center;
+  font-size: var(--heading-l-size);
+  width: 100%;
+}
+
+.add-new-column {
+  display: flex;
+  height: 3rem;
+  padding: 0rem 1.0625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: var(--br-5xl);
+  background-color: var(--main-purple);
+  font-size: var(--heading-m-size);
+  color: var(--white);
+}
