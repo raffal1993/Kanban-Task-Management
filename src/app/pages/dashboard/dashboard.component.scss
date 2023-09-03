@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-grey-light-bg);
+  width: 100%;
+  min-height: 100vh;
+  font-size: var(--heading-xl-size);
+  color: var(--medium-grey);
+  font-family: var(--font-plus_jakarta_sans);
+}
+
+main {
+  display: flex;
+  width: 100%;
+}
