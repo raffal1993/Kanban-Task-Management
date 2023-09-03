@@ -1,0 +1,101 @@
+{
+  "entityRelations": {
+    "component": {
+      "model": ["PROPERTY"],
+      "service": ["CONSTRUCTOR"],
+      "router": ["CONSTRUCTOR"],
+      "activatedRoute": ["CONSTRUCTOR"]
+    },
+    "guard": {
+      "model": ["PROPERTY"],
+      "service": ["CONSTRUCTOR"],
+      "router": ["CONSTRUCTOR"]
+    },
+    "service": {
+      "httpClient": ["CONSTRUCTOR"],
+      "service": ["CONSTRUCTOR"],
+      "model": ["PARAMETER", "RETURN", "PROPERTY"]
+    },
+    "directive": {
+      "model": ["PROPERTY"],
+      "service": ["CONSTRUCTOR"],
+      "elementRef": ["CONSTRUCTOR"],
+      "renderer2": ["CONSTRUCTOR"],
+      "templateRef": ["CONSTRUCTOR"],
+      "viewCotnainerRef": ["CONSTRUCTOR"]
+    }
+  },
+  "external": {
+    "elementRef": {
+      "type": "ElementRef",
+      "module": "@angular/core"
+    },
+    "renderer2": {
+      "type": "Renderer2",
+      "module": "@angular/core"
+    },
+    "templateRef": {
+      "type": "TemplateRef",
+      "module": "@angular/core"
+    },
+    "viewCotnainerRef": {
+      "type": "ViewContainerRef",
+      "module": "@angular/core"
+    },
+    "httpClient": {
+      "type": "HttpClient",
+      "module": "@angular/common/http"
+    },
+    "router": {
+      "type": "Router",
+      "module": "@angular/router"
+    },
+    "activatedRoute": {
+      "type": "ActivatedRoute",
+      "module": "@angular/router"
+    }
+  },
+  "entities": {
+    "component": {
+      "type": "ANGULAR_COMPONENT",
+      "folder": "shared/components/$name$",
+      "config": {
+        "stylesExtension": "scss",
+        "viewEncapsulation": "Emulated",
+        "selector": "generated",
+        "changeDetectionStrategy": "OnPush"
+      }
+    },
+    "model": {
+      "type": "DATA_STRUCTURE"
+    },
+    "service": {
+      "id": "service",
+      "type": "ANGULAR_SERVICE",
+      "suffix": "Service",
+      "folder": "core/services/$name$"
+    },
+    "query-model": {
+      "type": "DATA_STRUCTURE",
+      "folder": "query-models"
+    },
+    "guard": {
+      "id": "guard",
+      "type": "ANGULAR_GUARD",
+      "suffix": "Guard",
+      "folder": "core/guards"
+    },
+    "pipe": {
+      "id": "pipe",
+      "type": "ANGULAR_PIPE",
+      "suffix": "Pipe",
+      "folder": "shared/pipes/$name$"
+    },
+    "directive": {
+      "id": "directive",
+      "type": "ANGULAR_DIRECTIVE",
+      "suffix": "Directive",
+      "folder": "shared/directives/$name$"
+    }
+  }
+}
